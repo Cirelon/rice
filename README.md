@@ -1,4 +1,4 @@
-# Jasper's dotfiles)
+# Jasper's dotfiles
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
