@@ -2,16 +2,28 @@
 
 # xinitrc runs automatically when you run startx.
 
-# There are some small but important commands that need to be run when we start
-# the graphical environment. There is a link to this file in ~/.xprofile
-# because that file is run automatically if someone uses a display manager
-# (login screen) and so they are needed there. To prevent doubling up commands,
-# I source them here with the line below.
+export _JAVA_AWT_WM_NONREPARENTING=1
+setxkbmap gb
+clipmenud &
+slstatus &
+flameshot &
+dunst &
+kopia server --insecure --without-password &
+xrandr --output DP-0 --mode 1920x1080 --refresh 240.00 --output DP-2 --mode 1920x1080 --refresh 240.00 --output DP-4 --mode 1920x1080 --refresh 240.00
+blueman-applet &
 
-if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ]; then
-	. "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
-else
-	. "$HOME/.xprofile"
-fi
+while sleep 1
+do
+    xsetroot -name $(date)
+done &
 
-ssh-agent dwm
+while sleep 1
+do
+    picom --config ~/.config/picom.conf
+done &
+
+wal -i ~/.local/share/wallpapers --saturate 1
+
+while :; do
+        ssh-agent dwm
+done
