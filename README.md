@@ -20,7 +20,7 @@
 These dotfiles are intended to go with numerous suckless programs I use:
 
 - [dwm](https://github.com/Cirelon/dwm) (window manager)
-- [dwmblocks](https://github.com/Cirelon/slstatus) (statusbar)
+- [slstatus](https://github.com/Cirelon/slstatus) (statusbar)
 - [st](https://github.com/Cirelon/alacritty) (terminal emulator)
 
 ## Install these dotfiles and all dependencies
