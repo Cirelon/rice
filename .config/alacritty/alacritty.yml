@@ -1,0 +1,23 @@
+shell:
+ program: /usr/bin/zsh
+
+
+font:
+  normal:
+    family: Fantasque Sans Mono
+    style: Regular
+  bold:
+    family: Fantasque Sans Mono
+    style: Bold
+  italic:
+    family: Fantasque Sans Mono
+    style: Italic
+  bold_italic:
+    family: Fantasque Sans Mono
+    style: Bold Italic
+  size: 15
+  #use_thin_strokes: true
+  AppleFontSmoothing: true
+
+window:
+ opacity: 0.95
