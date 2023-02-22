@@ -7,6 +7,7 @@
 	- mpd/ncmpcpp (music)
 	- sxiv (image/gif viewer)
 	- mpv (video player)
+	- alacritty (terminal emulator)
 	- other stuff like xdg default programs, inputrc and more, etc.
 - I try to minimize what's directly in `~` so:
 	- All configs that can be in `~/.config/` are.
@@ -21,14 +22,16 @@ These dotfiles are intended to go with numerous suckless programs I use:
 
 - [dwm](https://github.com/Cirelon/dwm) (window manager)
 - [slstatus](https://github.com/Cirelon/slstatus) (statusbar)
-- [st](https://github.com/Cirelon/alacritty) (terminal emulator)
+- [dmenu](https://github.com/Cirelon/dmenu) (menubar)
 
 ## Install these dotfiles and all dependencies
 
-Use JBS to autoinstall everything:
+Use JBS to autoinstall everything (as root):
 
 ```
-curl -LO cirelon.com/jbs.sh && ./jbs.sh 
+curl -LO cirelon.com/jbs.sh
+chmod +x jbs.sh
+./jbs.sh 
 ```
 
 or clone the repo files directly to your home directory and install the
