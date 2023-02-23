@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.config/ohmyzsh"
+export ZSH="$HOME/.config/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,6 +105,18 @@ source $ZSH/oh-my-zsh.sh
 
 #################################################################
 
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+# Not supported in the "fish" shell.
+(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
+
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^[[3~"   delete-char
@@ -124,6 +136,7 @@ alias 'windowsfs=sudo mount /dev/nvme0n1p3 /home/cirelon/Windows'
 alias 'neonfs=cd /net/neon/mnt/user/'
 alias 'neon=TERM=xterm-256color ssh root@neon'
 alias 'cls=clear'
+alias 'newbg=wal -i ~/.local/share/wallpapers --saturate 1'
 
 eval $(thefuck --alias)
 
