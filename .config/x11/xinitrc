@@ -9,7 +9,7 @@ slstatus &
 flameshot &
 dunst &
 kopia server --insecure --without-password &
-xrandr --output DP-0 --mode 1920x1080 --refresh 240.00 --output DP-2 --mode 1920x1080 --refresh 240.00 --output DP-4 --mode 1920x1080 --refresh 240.00
+xrandr --output DP-3 --mode 1920x1080 --refresh 240 --output DP-2 --mode 1920x1080 --refresh 240 --output DP-1 --mode 1920x1080 --refresh 200
 blueman-applet &
 
 while sleep 1
