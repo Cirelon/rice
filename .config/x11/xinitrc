@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 
 # xinitrc runs automatically when you run startx.
 
@@ -9,8 +9,9 @@ slstatus &
 flameshot &
 dunst &
 kopia server --insecure --without-password &
-xrandr --output DP-3 --mode 1920x1080 --refresh 200 --output DP-2 --mode 1920x1080 --refresh 200 --output DP-1 --mode 1920x1080 --refresh 200
+xrandr --output DP-0 --mode 1920x1080 --pos 0x0 --rate 200 --output DP-4 --primary --mode 1920x1080 --pos 1920x0 --rate 200 --output DP-2 --mode 1920x1080 --pos 3840x0 --rate 200
 blueman-applet &
+easyeffects --gapplication-service &
 
 while sleep 1
 do
