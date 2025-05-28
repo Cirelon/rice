@@ -1,0 +1,26 @@
+[font]
+size = 15
+
+[font.bold]
+family = "Fantasque Sans Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Fantasque Sans Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Fantasque Sans Mono"
+style = "Italic"
+
+[font.normal]
+family = "Fantasque Sans Mono"
+style = "Regular"
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 0.95
+
+[terminal]
